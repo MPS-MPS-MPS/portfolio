@@ -13,17 +13,17 @@ const exp = [
   },
   {
     title: "Data Analyst",
-    cardImage: "assets/images/experience-page/sg-fleet-logo.png",
-    place: "SG Fleet Group",
+    cardImage: "assets/images/experience-page/melb-logo.jpg",
+    place: "School of Psychological Sciences, Melbourne University",
     time: "(July 2023 - Aug 2024)",
-    desp: "<li>Build and maintain interactive dashboards and reports in Power BI to track performance, costs, and utilisation</li><li>Clean, transform, and manage large datasets using Python and Excel, ensuring accuracy and consistency</li><li>Automate recurring reports and data processes to improve efficiency and reduce manual errors.</li><li>Identify patterns and trends that lead to improved vehicle usage and cost-saving opportunities.</li>",
+    desp: "<li>Supported psychology undergraduate, postgraduate, and PhD students with data analysis for research projects, ensuring data quality, consistency, and statistical validity.</li><li>Developed and maintained interactive Power BI dashboards and reports to track research outputs, school performance metrics, and resource utilisation.</li><li>Cleaned, transformed, and managed large research and administrative datasets using Python, SQL and Excel to support evidence-based decision-making.</li><li>Automated regular reporting tasks and data workflows, improving efficiency and reducing manual workload for academic and administrative staff.</li>",
   },
   {
     title: "Audio Engineer",
     cardImage: "assets/images/experience-page/soundpark-logo.png",
     place: "Soundpark Studios",
     time: "(Dec 2021 - Jan 2023)",
-    desp: "<li>Recorded, edited, and mixed audio for a wide range of projects including music, voiceovers, and sound design</li><li>Used Pro Tools and Logic Pro to engineer and master sessions for artists and commercial clients</li><li>Ensured audio quality met broadcast and streaming standards across all deliverables</li>",
+    desp: "<li>Recorded, edited, and mixed audio for a wide range of projects including music, voiceovers, and sound design</li><li>Used Pro Tools and Logic Pro to engineer and master sessions for artists and commercial clients</li><li>Ensured audio quality met broadcast and streaming standards across all deliverables</li><li>Collaborated closely with musicians, producers, and clients to achieve creative goals and deliver polished final products on tight deadlines</li>",
   },
 ];
 
