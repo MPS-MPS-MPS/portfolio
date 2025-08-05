@@ -1,4 +1,4 @@
-/*Declaration of CSS variables for light/dark theme*/
+/* light/dark */
 
 html[data-theme="light"] {
   --col-icon: black;
@@ -40,7 +40,6 @@ html[data-theme="dark"] {
   --col-white: #fff;
 }
 
-/* Profile picture styling */
 .profile-picture {
   width: 200px;
   height: 200px;
@@ -189,12 +188,7 @@ html[light-mode="dark"] .socialicon{
 }
 
 
- /*
----------------------------
-   LINKEDIN MICROANIMATION
----------------------------
-*/
-
+ 
  .linkedin-icon{
   margin-left: 15px;
 }
@@ -232,11 +226,6 @@ html[light-mode="dark"] .socialicon{
   
 }
 
-/*
----------------------------
-   INSTAGRAM MICROANIMATION
----------------------------
-*/
 
 .instagram-icon {
   width: 90px !important;
@@ -289,11 +278,6 @@ html[light-mode="dark"] .socialicon{
 }
 
 
-/*
----------------------------
-   TWITTER MICROANIMATION
----------------------------
-*/
 .twitter-icon{
   width: 40px;
   margin-left: 12px;
@@ -315,11 +299,7 @@ html[light-mode="dark"] .socialicon{
      }
    }
 
-/*
---------------------------
-   GITHUB MICROANIMATION
---------------------------
-*/
+
 html[light-mode="dark"] .github-icon{
   fill: #ffff;
 }
@@ -341,12 +321,7 @@ html[light-mode="dark"] .github-icon{
   100% { transform: rotate(-10deg); }
  }
 
- /*
-  --------------------------
-     DRIBBBLE MICROANIMATION
-  --------------------------
-  */
-  
+
   .dribbble-icon{
     width: 30px;
     height: 30px;
@@ -373,11 +348,7 @@ html[light-mode="dark"] .github-icon{
     }
   }
   
-  /*
-  --------------------------
-     GMAIL MICROANIMATION
-  --------------------------
-  */
+
   
   .gmail-icon{
     margin: auto;
@@ -385,11 +356,7 @@ html[light-mode="dark"] .github-icon{
     height: 35px;
   }
   
-  /*
-  --------------------------
-     CODEFORCES MICROANIMATION
-  --------------------------
-  */
+ 
   
   .codeforces-icon{
     margin-right: 6px;
@@ -452,11 +419,7 @@ html[light-mode="dark"] .github-icon{
   
   
 
-/*
-----------------------------
-   SOCIAL MEDIA ANIMATIONS
-----------------------------
-*/
+
 
 .socialicon:hover {
   transform: translateY(-4px);

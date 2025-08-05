@@ -4,8 +4,6 @@
 }
 
 
-/*CSS variable declaration for light/dark mode*/
-
 html[data-theme="light"] {
   --bg-mybtn: red;
   --bg-nav: black;
@@ -62,11 +60,7 @@ html[data-theme="dark"] {
 }
 
 
-/*
----------------------------
-      SCROLLBAR
----------------------------
-*/
+
 
 ::-webkit-scrollbar {
   width: 16px;
@@ -91,7 +85,6 @@ html[data-theme="dark"] {
   
 }
 
-/* Custom Scrollbar for Mozilla Firefox*/
 html{
   overflow-y: visible;
   scrollbar-color: #ca9eff #f1f1f1;
@@ -132,11 +125,6 @@ body {
 }
 
 
-/*
----------------------------------------
- SCROLL TO TOP BUTTON MICROANIMATION
----------------------------------------
-*/
 
 @keyframes up {
   0% {
@@ -170,11 +158,7 @@ html {
 }
 
 
-/*
-------------------------------------
-   HAMBURGER ANIMATION
-------------------------------------
-*/
+
 
 .hamburger_wrapper {
   float: right;
@@ -241,7 +225,7 @@ html {
   box-shadow: 0 2px 2px rgb(230, 230, 230);
 }
 
-/* Dark Mode toggle switch button */
+/* Dark Mode toggle */
 .dark_toggler {
   -webkit-appearance: none;
   position: relative;
@@ -317,11 +301,6 @@ color: #ffffff !important;
    inset -2px -5px 5px 0px rgb(130 216 251);
    background: #1f1d1d;
 }
-/*
--------------------------------------
-  SIDEBAR SVG ANIMATION
---------------------------------------
-*/
 
 .bike {
   margin-top: 30px;
@@ -374,11 +353,7 @@ color: #ffffff !important;
 }
 
 
-/*
--------------------------------------
-  NAV BAR HIGHLIGHTING
---------------------------------------
-*/
+
 
 @media only screen and (min-width: 1024px) {
   .current-link {
@@ -422,7 +397,6 @@ color: #ffffff !important;
       padding: 6px 21px !important;
   }
 
-  /* Hide svg on laptop screens to prevent overlap between sidebar and navbar */
   .bike {
       display: none;
   }
@@ -446,7 +420,6 @@ html[light-mode="light"] .navbar-brand:hover{
 }
 
 
-/**Navbar burger animations**/
 
 .navbar-toggler {
   position: relative;
@@ -504,14 +477,8 @@ html[light-mode="light"] .navbar-brand:hover{
 }
 
 
-/*
-------------------------
-  FOOTER SECTION
-------------------------
-*/
 
 
-/* Also have a look at the scroll to top button if changing footer's height (below upArrow in app.js) */
 
 .footer {
   padding-top: 10px;
@@ -555,21 +522,12 @@ html[light-mode="light"] .navbar-brand:hover{
 }
 
 
-/********
-Rotate Transition in foote Soical Icon
-*********/
-
 .rounded-social-buttons .social-button:hover,
 .rounded-social-buttons .social-button:focus {
   transition: background-color 0.3s, var(--trans-props);
 }
 
 
-/*
-------------------------------
- TWITTER MICROANIMATION
--------------------------------
-*/
 
 .twitter:hover #wing1 {
   transform-origin: center;
@@ -588,11 +546,6 @@ Rotate Transition in foote Soical Icon
 }
 
 
-/*
------------------------------
- LINKEDIN MICROANIMATION
------------------------------
-*/
 
 .linkedin:hover .linkedin-icon-footer>rect {
   animation: rect-up 0.3s linear infinite;
@@ -625,12 +578,6 @@ Rotate Transition in foote Soical Icon
   }
 }
 
-
-/*
------------------------------
- INSTAGRAM MICROANIMATION
------------------------------
-*/
 
 .st0 {
   fill: none;
@@ -681,11 +628,6 @@ Rotate Transition in foote Soical Icon
 }
 
 
-/*
------------------------------
- GITHUB MICROANIMATION
------------------------------
-*/
 
 .github:hover #arm {
   transform-origin: bottom right;
@@ -735,11 +677,6 @@ Rotate Transition in foote Soical Icon
 }
 
 
-/*
-----------------------------------------
- HOVER EFFECT ON SOCIAL MEDIA ICONS
-----------------------------------------
-*/
 
 .rounded-social-buttons .social-button.twitter {
   background: #2b2a2A;
@@ -787,9 +724,6 @@ Rotate Transition in foote Soical Icon
 }
 
 
-/************
-Contact Form In Footer
-*************/
 
 .display {
   height: auto;
@@ -814,11 +748,6 @@ form {
 }
 
 
-/*
--------------------
- Footer Form
---------------------
-*/
 
 .form-style-6 {
   font: 95% Arial, Helvetica, sans-serif;
@@ -1000,11 +929,7 @@ form {
   -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
-/*
-----------------------------
-Send button micro animation
-----------------------------
-*/
+
 
 #main {
   position: relative;

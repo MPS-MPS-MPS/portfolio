@@ -83,8 +83,6 @@ html {
   font-weight: bold;
 } 
 
-/*properties for online accreditaions(MOOCS) heading*/
-
 .h4,
 h4 {
   font-weight: bold;
@@ -132,10 +130,10 @@ p {
 }
 @media only screen and (max-width: 600px) {
   .edSection {
-    margin-top: 50px; /*changed the margin-to from 250px to 50px to eliminate space */
+    margin-top: 50px; 
   }
 }
-/* Card Hover Effect */
+
 .mooc-title {
   color: var(--head-col);
 }
@@ -384,7 +382,6 @@ header p {
   font-weight: bold;
 }
 
-/* Draws line */
 .timeline::before {
   content: "";
   background: #C5CAE9;
@@ -437,14 +434,11 @@ header p {
   clear: both;
 }
 
-/* This will give the cards to their respective sides */
 .timeline-content {
   position: relative;
   width: 45%;
   padding: 10px 30px;
   border-radius: 4px;
-/*   background: #f5f5f5;
-  color: black; */
   box-shadow: 0 20px 25px 15px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: row;
@@ -453,14 +447,13 @@ header p {
   color: white;
 }
 
-/* Fix for list items spacing - make them behave like proper list items */
 .timeline-content li {
   display: list-item;
   list-style-type: disc;
   margin-left: 20px;
   margin-bottom: 8px;
   padding-left: 8px;
-  text-indent: -8px;
+  text-indent: -23px;
   line-height: 1.4;
 }
 

@@ -477,7 +477,6 @@ ul ol {
   color: var(--head-col);
 }
 
-/*Hackathon Section Starts*/
 
 .blog-slider {
   width: 95%;
@@ -637,7 +636,7 @@ ul ol {
   transition: all 0.4s;
 }
 
-/*Hackathon Name */
+
 
 .blog-slider__title {
   font-size: 24px;
@@ -646,7 +645,7 @@ ul ol {
   margin-bottom: 20px;
 }
 
-/* Role in Hackathon   */
+
 
 .blog-slider__code {
   color: var(--meta-col);
@@ -655,8 +654,6 @@ ul ol {
   font-size: 17px;
   font-weight: 700;
 }
-
-/* Hackathon Description   */
 
 .blog-slider__text {
   color: (var(--head-col));
@@ -696,12 +693,8 @@ a:link {
     margin-bottom: 12rem !important;
   }
 }
-/*Hackathon Section Ends*/
-/*
-----------------------------
-       SVG ANIMATIONS 
-----------------------------
-*/
+
+
 #tie {
   animation: tie 2s infinite ease-in-out;
   transform-origin: 50% 62%;
