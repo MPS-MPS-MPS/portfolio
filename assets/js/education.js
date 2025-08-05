@@ -4,16 +4,8 @@ AOS.init();
 
 const moocs = document.querySelector(".moocs");
 const moocscards = [
-  {
-    title: "Data Science",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/browse/data-science",
-  },
-  {
-    title: "Cryptography",
-    cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/cryptography-for-beginners/",
-  },
+
+
   {
     title: "Machine Learning",
     cardImage: "assets/images/education-page/coursera2.svg",
@@ -34,11 +26,7 @@ const moocscards = [
     cardImage: "assets/images/education-page/udacity.svg",
     moocLink: "https://www.udacity.com/course/intro-to-javascript--ud803",
   },
-  {
-    title: "Bootstrap 4",
-    cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/bootstrap-4-tutorials/",
-  },
+ 
   {
     title: "Intro to React",
     cardImage: "assets/images/education-page/edx.svg",
@@ -55,11 +43,7 @@ const moocscards = [
     cardImage: "assets/images/education-page/coursera2.svg",
     moocLink: "https://www.coursera.org/learn/server-side-nodejs",
   },
-  {
-    title: "XML-AJAX",
-    cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/xml-from-beginner-to-expert/",
-  },
+
   {
     title: "Data Structures & Algorithms",
     cardImage: "assets/images/education-page/udacity.svg",

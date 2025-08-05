@@ -453,6 +453,17 @@ header p {
   color: white;
 }
 
+/* Fix for list items spacing - make them behave like proper list items */
+.timeline-content li {
+  display: list-item;
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  text-indent: -8px;
+  line-height: 1.4;
+}
+
 .timeline-content::after {
   content: "";
   position: absolute;
