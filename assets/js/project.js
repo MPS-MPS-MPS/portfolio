@@ -30,8 +30,8 @@ const projects = [
     title: "GRAZER",
     cardImage: "assets/images/project-page/grazer.png",
     description: "A website made for the band GRAZER using React",
-    Previewlink: "",
-    Githublink: "",
+    Previewlink: "https://grazer-react.vercel.app/",
+    Githublink: "https://github.com/MPS-MPS-MPS/grazer-react",
   },
  
   {
