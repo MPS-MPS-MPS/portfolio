@@ -138,7 +138,7 @@ let footer = $(`
              <div class="form-header">
                 <h6 class="display" id="get-in-touch">Get in Touch</h6>
               </div>
-                <form name="contact">
+                <form name="contact" netlify>
                   <input id="name" type="text" name="name" placeholder="Your Name" required/>
                   <input id="email" type="email" name="email" placeholder="Email Address" required/>                  
                   <textarea id="textArea" name="message" placeholder="Type your Message" required></textarea>
@@ -147,6 +147,10 @@ let footer = $(`
                     <button id="lnch" type="submit" value="Send" >Send</button>
                     <div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div>
                   </div>
+                  <!-- Honeypot field for Netlify -->
+                  <p class="hidden" style="display: none;">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                  </p>
                 </form>
               </div>
             </div>
@@ -248,6 +252,29 @@ $(function () {
   bodyElement.append(footer);
   bodyElement.append(upArrow);
   $("#btnScrollToTop").css("visibility", "hidden");
+  
+  // Show the hidden Netlify form
+  const hiddenForm = document.querySelector('form[name="contact"]');
+  if (hiddenForm) {
+    hiddenForm.style.display = 'block';
+    document.getElementById('contact-form-container').appendChild(hiddenForm);
+  } else {
+    // Fallback: Create a new form with netlify attributes
+    const formContainer = document.getElementById('contact-form-container');
+    const newForm = document.createElement('form');
+    newForm.name = 'contact';
+    newForm.setAttribute('netlify', '');
+    newForm.innerHTML = `
+      <input id="name" type="text" name="name" placeholder="Your Name" required/>
+      <input id="email" type="email" name="email" placeholder="Email Address" required/>                  
+      <textarea id="textArea" name="message" placeholder="Type your Message" required></textarea>
+      <div id="main">
+        <button id="lnch" type="submit" value="Send">Send</button>
+        <div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div>
+      </div>
+    `;
+    formContainer.appendChild(newForm);
+  }
 
   //toggler hamburger functions
   const menuBtn = document.querySelector(".navbar-toggler");
@@ -385,8 +412,9 @@ $(function submitAnimation() {
   const text = document.querySelector("#textArea")
   const emailPattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
-  $("form[name='contact']").on("submit", function (e) {
-    e.preventDefault(); // Prevent default form submission
+  // Only validate on button click, don't intercept form submission
+  $("#lnch").on("click", function (e) {
+    e.preventDefault(); // Prevent button default action
 
     // Check if the name field is empty or contains a number
     if (name.value == "" || (/\d/.test(name.value))) {
@@ -415,10 +443,8 @@ $(function submitAnimation() {
       }, 1500);
       // Wait for 2.2 seconds so that the send button animation can be fully played before submitting the form
       setTimeout(() => {
-        // Remove the event listener to prevent infinite loop
-        $(this).off('submit');
         // Submit the form to Netlify
-        this.submit();
+        document.querySelector('form[name="contact"]').submit();
       }, 2200);
     }
   });

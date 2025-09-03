@@ -127,11 +127,15 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
     <script src="assets/js/particle.js"></script>
 
-    <!-- Hidden form for Netlify  -->
-    <form name="contact" netlify style="display: none;">
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
+    <!-- Hidden form for Netlify form detection -->
+    <form name="contact" netlify action="/" method="POST" data-netlify="true" style="display: none;">
+      <input type="text" name="name" style="display: none;"/>
+      <input type="email" name="email" style="display: none;"/>
+      <textarea name="message" style="display: none;"></textarea>
+      <!-- Honeypot field for Netlify -->
+      <p class="hidden" style="display: none;">
+        <label style="display: none;">Don't fill this out if you're human: <input name="bot-field" /></label>
+      </p>
     </form>
 
 </body>
