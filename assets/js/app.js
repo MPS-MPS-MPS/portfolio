@@ -385,7 +385,8 @@ $(function submitAnimation() {
   const text = document.querySelector("#textArea")
   const emailPattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
-  $("#lnch").on("click", function () {
+  $("form[name='contact']").on("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission
 
     // Check if the name field is empty or contains a number
     if (name.value == "" || (/\d/.test(name.value))) {
@@ -414,7 +415,10 @@ $(function submitAnimation() {
       }, 1500);
       // Wait for 2.2 seconds so that the send button animation can be fully played before submitting the form
       setTimeout(() => {
-        document.querySelector('form').submit();
+        // Remove the event listener to prevent infinite loop
+        $(this).off('submit');
+        // Submit the form to Netlify
+        this.submit();
       }, 2200);
     }
   });
