@@ -138,7 +138,7 @@ let footer = $(`
              <div class="form-header">
                 <h6 class="display" id="get-in-touch">Get in Touch</h6>
               </div>
-                <form name="contact" netlify>
+                <form name="contact">
                   <input id="name" type="text" name="name" placeholder="Your Name" required/>
                   <input id="email" type="email" name="email" placeholder="Email Address" required/>                  
                   <textarea id="textArea" name="message" placeholder="Type your Message" required></textarea>
