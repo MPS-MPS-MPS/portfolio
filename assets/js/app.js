@@ -136,15 +136,15 @@ let footer = $(`
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0 form-comtainer">
           <div class="form-style-6">
              <div class="form-header">
-                <h6 class="display">Get in Touch</h6>
+                <h6 class="display" id="get-in-touch">Get in Touch</h6>
               </div>
-                <form name="form1" action="https://formcarry.com/s/BywEPAJNb" method="POST" accept-charset="UTF-8" >
+                <form name="contact" netlify>
                   <input id="name" type="text" name="name" placeholder="Your Name" required/>
                   <input id="email" type="email" name="email" placeholder="Email Address" required/>                  
                   <textarea id="textArea" name="message" placeholder="Type your Message" required></textarea>
               
                   <div id="main">
-                    <button id="lnch" type="button" value="Send" >Send</button>
+                    <button id="lnch" type="submit" value="Send" >Send</button>
                     <div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div>
                   </div>
                 </form>
@@ -171,13 +171,13 @@ let footer = $(`
     </a>
 
 
-
-    <a class="social-button gmail" href="mailto:matt.p.spiller@gmail.com?subject=Portfolio%20Enquiry" target="_blank" >
-    <!-- svg code for gmail icon -->
+  <!-- Gmail icon commented out
+    <a class="social-button gmail" href="#get-in-touch" >
       <svg class="gmail-icon-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35">
         <path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.819L12 10.91l9.545-7.089h.819A1.636 1.636 0 0 1 24 5.457z"/>
       </svg>
     </a>
+  -->
 
     <a class="social-button github" href="https://github.com/MPS-MPS-MPS" target="_blank">
     <!-- SVG code for Github icon -->
