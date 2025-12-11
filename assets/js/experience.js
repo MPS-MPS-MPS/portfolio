@@ -5,25 +5,25 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     cardImage: "assets/images/experience-page/web-dev-logos.png",
     place: "Freelance",
-    time: "(Nov 2024 - present)",
-    desp: "<li>Designed and developed responsive websites and custom web applications tailored to the needs of artists, healthcare organisations, and businesses</li> <li>For St Vincent’s Hospital and Voices for Palliative Care, contributed to internal tools and information portals aimed at improving communication and resource sharing across departments</li> <li>Managed full development cycles – from planning and prototyping to deployment and support – while maintaining strong client communication and version control (Git)</li><li>At Dreamwave, designed and developed custom audio effect plugins using C++ and Python, creating tools for dynamic processing, modulation, and creative sound design used by producers and engineers</li>",
+    time: "(Jan 2025 - present)",
+    desp: "<li>Designed and developed responsive websites and custom web applications using HTML/CSS, JavaScript, React, and other frontend frameworks, with backend development in Python, Node.js, plus SQL database integration.</li> <li>Built full-stack solutions and internal tools for healthcare and business clients, such as St Vincent’s Hospital and Voices for Palliative Care, implementing RESTful APIs, data models, and portals to support communication and resource sharing.</li> <li>Developed audio effect plugins in C++ and Python at Dreamwave, using object-oriented programming and creative sound processing in Linux environments.</li> ",
   },
   {
-    title: "Data Analyst",
-    cardImage: "assets/images/experience-page/melb-logo.jpg",
-    place: "School of Psychological Sciences, Melbourne University",
-    time: "(July 2023 - Aug 2024)",
-    desp: "<li>Supported psychology undergraduate, postgraduate, and PhD students with data analysis for research projects, ensuring data quality, consistency, and statistical validity.</li><li>Developed and maintained interactive Power BI dashboards and reports to track research outputs, school performance metrics, and resource utilisation.</li><li>Cleaned, transformed, and managed large research and administrative datasets using Python, SQL and Excel to support evidence-based decision-making.</li><li>Automated regular reporting tasks and data workflows, improving efficiency and reducing manual workload for academic and administrative staff.</li>",
+    title: "Data Support Officer",
+    cardImage: "assets/images/experience-page/apc-waste.png",
+    place: "APC Waste Consultants, North Sydney",
+    time: "(Nov 2023 - Dec 2024)",
+    desp: "<li>Proficient in managing and analyzing large datasets with a focus on accuracy and efficiency, utilizing advanced Excel functions and PowerBI. </li> <li>Data entry into Microsoft Excel and OneNote, proofreading and editing data reports</li> <li>Demonstrated ability to streamline workflows and enhance data integrity</li> <li>Strong communication skills used to collaborate with teams and support customer inquiries, conveying APC’s waste-audit findings and helping clients understand how data informs their waste-management decisions.</li>",
   },
   {
-    title: "Audio Engineer",
-    cardImage: "assets/images/experience-page/soundpark-logo.png",
-    place: "Soundpark Studios",
+    title: "Outbound Sales Representative",
+    cardImage: "assets/images/experience-page/simply-energy.png",
+    place: "Simply Energy, Melbourne",
     time: "(Dec 2021 - Jan 2023)",
-    desp: "<li>Recorded, edited, and mixed audio for a wide range of projects including music, voiceovers, and sound design</li><li>Used Pro Tools and Logic Pro to engineer and master sessions for artists and commercial clients</li><li>Ensured audio quality met broadcast and streaming standards across all deliverables</li><li>Collaborated closely with musicians, producers, and clients to achieve creative goals and deliver polished final products on tight deadlines</li>",
+    desp: "<li>Engaged with residential and small-business customers to provide tailored energy plans that aligned with their usage needs</li> <li>Clearly communicated product benefits, pricing options, and contract details to support informed customer decisions</li> <li>Consistently met and exceeded weekly sales and conversion targets in a fast-paced environment</li> <li>Collaborated with team members and supervisors to improve sales strategies and maintain up to date knowledge of market offerings and regulatory requirements</li>",
   },
 ];
 
