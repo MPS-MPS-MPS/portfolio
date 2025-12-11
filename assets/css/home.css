@@ -589,3 +589,20 @@ a:hover {
     margin-top: 1rem;
   }
 }
+
+/* Contact form section alignment */
+#get-in-touch .row {
+  align-items: center;
+}
+
+#get-in-touch svg {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+#get-in-touch .col-lg-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
